@@ -1,0 +1,137 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+#menuContainer {
+    display: inline-block;
+}
+
+#menuButton {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-decoration: none; /* Added this to remove underline */
+}
+
+#topBar {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+#topBar a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+#sidebar {
+    width: 150px;
+    height: 100vh;
+    background-color: #222;
+    color: #fff;
+    position: absolute;
+    top: 37px;
+    left: -250px;
+    transition: left 0.3s ease-in;
+}
+
+#sidebar.active {
+    left: 0;
+}
+
+#sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+#sidebar ul li {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #444;
+    cursor: pointer;
+}
+
+#content {
+    margin-left: 160px;
+    max-width: 500px;
+    padding: 20px;
+}
+
+footer {
+    bottom: 0;
+    position: fixed;
+    width: 90%;
+    text-align: center;
+}
+#chatContainer {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    z-index: 9999;
+}
+
+#chatButton {
+    background-color: #007bff;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#chatButton img {
+    width: 30px;
+    height: 30px;
+}
+
+#chatBox {
+    display: none;
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    width: 300px;
+    max-height: 400px;
+    overflow-y: scroll;
+}
+
+#chatHeader {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#chatMessages {
+    padding: 10px;
+}
+
+#chatInput {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+#messageInput {
+    flex-grow: 1;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+#sendMessage {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+}
