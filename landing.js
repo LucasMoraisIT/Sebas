@@ -36,3 +36,12 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
     
+let aliqex = document.querySelector("#aliqex")
+let aliqin = document.querySelector("#aliqin")
+let vnota = document.querySelector("#vnota")
+function difal(){
+    let dif = ((((100-Number(aliqex.value))/100)/((100-Number(aliqin.value))/100)*100)-100)
+    let vnres = Number(vnota.value)+((Number(vnota.value)/100)*dif)
+    let res=document.querySelector("#res") 
+    res.innerHTML=`A diferença de aliquota é de ${dif.toFixed(3)}%. E o valor real da nota é R$${vnres.toFixed(2)} `
+}
