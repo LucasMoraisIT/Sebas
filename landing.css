@@ -30,7 +30,7 @@ body {
 
 #sidebar {
     width: 150px;
-    height: 100vh;
+    height: 100%;
     background-color: #222;
     color: #fff;
     position: absolute;
@@ -62,10 +62,13 @@ body {
 }
 
 footer {
+    color: #fff;
     bottom: 0;
     position: fixed;
-    width: 90%;
+    padding: 8px;
+    width: 100%;
     text-align: center;
+    background-color: #444;
 }
 #chatContainer {
     position: fixed;
